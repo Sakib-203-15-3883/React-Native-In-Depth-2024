@@ -28,7 +28,7 @@
        Example of device-specific features :
        Camera Access, GPS and Location Services,Biometric Authentication, Device Sensors
 
-      iii. Community components
+      iii. Community components:
 
          
      Community components in React Native refer to third-party libraries or packages created and maintained by the developer community.
