@@ -43,6 +43,7 @@
 
      
 #Any component that renders other components is a parent component. rendered components known as child components 
+#Most of React Native’s Core Components can be customized with props
           
 
 
