@@ -31,14 +31,14 @@
       iii. Community components:
 
          
-     Community components in React Native refer to third-party libraries or packages created and maintained by the developer community.
-      I. UI Components . [ react-native-elements, react-native-paper ]
-      ii. Navigation [ react-navigation ]
-      iii. State Management [ Redux ,  MobX ]
-      iv . Networking and APIs [ axios ,react-native-fetch-blob]
-      v.  Animations [ react-native-reanimated , lottie-react-native ]
-      vi. Maps and Location Services [ react-native-maps , react-native-geolocation-service ]
-      vii. Push Notifications  [ react-native-push-notification ] 
+         Community components in React Native refer to third-party libraries or packages created and maintained by the developer community.
+         UI Components . [ react-native-elements, react-native-paper ]
+         Navigation [ react-navigation ]
+         State Management [ Redux ,  MobX ]
+         Networking and APIs [ axios ,react-native-fetch-blob]
+         Animations [ react-native-reanimated , lottie-react-native ]
+         Maps and Location Services [ react-native-maps , react-native-geolocation-service ]
+         Push Notifications  [ react-native-push-notification ] 
 
           
 
