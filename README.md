@@ -48,10 +48,10 @@
 
 
 2.Understanding how to implement  React native vector icons in  react native project
-
-  i.First we need to install and configure the React native vector icons package from docs. 
-  ii.  import the  desire icon 
-  iii. then  use it in app  UI . 
+    
+   i.First we need to install and configure the React native vector icons package from docs. 
+   ii.  import the  desire icon 
+   iii. then  use it in app  UI . 
 
 
 
