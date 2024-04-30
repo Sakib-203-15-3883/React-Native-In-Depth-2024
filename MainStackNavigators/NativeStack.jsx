@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Main from '../src/Main/Main';
 import Components from '../src/LearnComponents/Components';
 import FlatList from '../src/FlatList/FlatList';
+import VectorIcons from '../src/VectorIcons/VectorIcons';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ const NativeStack = () => {
       }}>
       <Stack.Screen name="Main" component={Main} />
       <Stack.Screen name="Components" component={Components} />
+      <Stack.Screen name="VectorIcons" component={VectorIcons} />
       <Stack.Screen name="FlatList" component={FlatList} />
     </Stack.Navigator>
   );

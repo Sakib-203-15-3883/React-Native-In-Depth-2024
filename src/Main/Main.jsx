@@ -19,10 +19,10 @@ const Main = () => {
 
     {
       id: '2',
-      title: 'Learn Components in React Native',
+      title: 'Learn react-native-vector-icons',
       content:
-        'Here i would try to learn all the concepts related to components like react components, core components, native components, community components.',
-        screen: 'FlatList',
+        'Here we would try to learn  the concepts related to VectorIcons and use different types of icons in react native project  ',
+        screen: 'VectorIcons',
     },
 
     {
