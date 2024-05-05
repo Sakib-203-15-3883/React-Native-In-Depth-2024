@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View,FlatList } from 'react-native'
-import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { lightColors } from '../../Utility/Colors';
+import {StyleSheet, Text, View, FlatList} from 'react-native';
+import React, {useContext} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {lightColors} from '../../Utility/Colors';
 import Button from '../../Utility/Button';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
+
+import {ThemeContext} from '../../Context/ThemeContext';
 
 const Main = () => {
+  const {theme, toggleTheme, colorScheme} = useContext(ThemeContext);
   const navigation = useNavigation();
 
   const data = [
@@ -14,7 +17,7 @@ const Main = () => {
       title: 'Learn Components in React Native',
       content:
         'Here we would try to learn all the concepts related to components like react components, core components, native components, community components.',
-        screen: 'Components',
+      screen: 'Components',
     },
 
     {
@@ -22,38 +25,41 @@ const Main = () => {
       title: 'Learn react-native-vector-icons',
       content:
         'Here we would try to learn  the concepts related to VectorIcons and use different types of icons in react native project  ',
-        screen: 'VectorIcons',
+      screen: 'VectorIcons',
     },
 
     {
       id: '3',
-      title: 'Learn Components in React Native',
+      title: 'Learn how to apply theme in React Native',
       content:
-        'Here i would try to learn all the concepts related to components like react components, core components, native components, community components.',
-        screen: 'FlatList',
+        'we implement theme [ light/dark ] in react native app with AsyncStorage and context api for whole app.  ',
+      screen: 'LearnTheme',
     },
+
 
     {
       id: '4',
       title: 'Learn Components in React Native',
       content:
         'Here i would try to learn all the concepts related to components like react components, core components, native components, community components.',
-        screen: 'FlatList',
+      screen: 'FlatList',
     },
-    
-    
+
+   
   ];
 
-  const handleOnPress = (screen)=>{
+  const handleOnPress = screen => {
     navigation.navigate(screen);
+  };
 
-  }
-
-
-  const renderItem = ({ item }) => (
-    <View style={styles.card}>
-      <Text style={styles.title}>{item.title}</Text>
-      <Text style={styles.content}>{item.content}</Text>
+  const renderItem = ({item}) => (
+    <View style={[styles.card, {backgroundColor: colorScheme.background}]}>
+      <Text style={[styles.title, {color: colorScheme.text}]}>
+        {item.title}
+      </Text>
+      <Text style={[styles.content, {color: colorScheme.text}]}>
+        {item.content}
+      </Text>
       <View style={styles.buttonPosition}>
         <Button title="Go" onPress={() => handleOnPress(item.screen)} />
       </View>
@@ -61,30 +67,44 @@ const Main = () => {
   );
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView
+      style={[styles.container, {backgroundColor: colorScheme.background}]}>
+      <View
+        style={{
+          marginVertical:"5%",
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: colorScheme.background,
+        }}>
 
-<FlatList
+        <Button
+          title="Toggle Theme"
+          onPress={toggleTheme}
+          color={colorScheme.buttonBackground}
+        />
+      </View>
+
+      <FlatList
         data={data}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={item => item.id}
       />
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
 
 const styles = StyleSheet.create({
-  container:{
-    flex:1,
-    marginHorizontal:"1%",
-    marginVertical:"1%"
+  container: {
+    flex: 1,
   },
-  text:{
-    color:lightColors.text
-  },
+  // text: {
+  //   color: lightColors.text,
+  // },
   card: {
-    backgroundColor: '#ffffff',
+    // backgroundColor: '#ffffff',
+    // backgroundColor:colorScheme.background,
     borderRadius: 10,
     padding: 20,
     marginVertical: 10,
@@ -97,23 +117,22 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    marginTop:"5%",
-   
+    marginTop: '5%',
   },
   title: {
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
-    color:lightColors.text
+    // color: lightColors.text,
   },
   content: {
     fontSize: 16,
-    color:lightColors.text
+    // color: lightColors.text,
   },
 
-  buttonPosition:{
-    marginTop:"5%",
-    alignItems:"center",
-    justifyContent:"center"
-  }
-})
+  buttonPosition: {
+    marginTop: '5%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

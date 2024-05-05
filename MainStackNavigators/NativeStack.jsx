@@ -6,6 +6,7 @@ import Main from '../src/Main/Main';
 import Components from '../src/LearnComponents/Components';
 import FlatList from '../src/FlatList/FlatList';
 import VectorIcons from '../src/VectorIcons/VectorIcons';
+import LearnTheme from '../src/LearnTheme/LearnTheme';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ const NativeStack = () => {
       <Stack.Screen name="Main" component={Main} />
       <Stack.Screen name="Components" component={Components} />
       <Stack.Screen name="VectorIcons" component={VectorIcons} />
+      <Stack.Screen name="LearnTheme" component={ LearnTheme} />
       <Stack.Screen name="FlatList" component={FlatList} />
     </Stack.Navigator>
   );
