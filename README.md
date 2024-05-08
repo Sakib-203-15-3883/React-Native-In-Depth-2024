@@ -54,6 +54,7 @@
    iii. then  use it in app  UI . 
 
 
+
 3. Understanding how to implement Theme for the whole app  with  AsyncStorage and context api.
    
    i. First, we install react-native-async-storage/async-storage to store the user preference. It stores small data 
