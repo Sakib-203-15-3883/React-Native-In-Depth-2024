@@ -55,6 +55,28 @@
 
 
 
+3. Understanding how to implement Theme for the whole app  with  AsyncStorage and context api.
+   
+   i. First, we install react-native-async-storage/async-storage to store the user preference. It stores small data 
+      as a key-value pair and it's global to the app. we use it to store the selected theme preferences.
+
+   ii. The theme implementation involves: Using AsyncStorage to store and retrieve the selected theme. Creating a 
+       ThemeContext to provide the theme state and toggle function to the components. Dynamically applying the 
+       selected theme's color scheme to the UI components.
+
+   iii. Context API: The Context API is a feature in React that allows you to pass data through the component tree 
+        without having to pass props down manually at every level. It provides a way to share values like themes or 
+        user preferences across components.
+
+   iv. AsyncStorage: AsyncStorage is a simple, unencrypted, asynchronous, persistent, key-value storage system that 
+       is global to the app. It is commonly used in React Native apps for storing small amounts of data locally. 
+
+   
+
+   
+
+
+
           
 
 
