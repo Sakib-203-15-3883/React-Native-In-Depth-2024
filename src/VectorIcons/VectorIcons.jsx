@@ -38,6 +38,7 @@ const TextDataComponent = () => {
               flexDirection: 'row',
               gap: 40,
               flexWrap: 'wrap',
+              marginBottom:40,
             }}>
             <Home name="home" size={60} color={colorScheme.text} />
             <Camera name="camera" size={60} color={colorScheme.text} />
@@ -67,6 +68,8 @@ const TextDataComponent = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding:"5%",
+    
   },
   title: {
     fontSize: 20,

@@ -39,10 +39,26 @@ const Main = () => {
 
     {
       id: '4',
-      title: 'Learn Components in React Native',
+      title: 'Learn how to create animated scrollable masked TabBar',
       content:
-        'Here i would try to learn all the concepts related to components like react components, core components, native components, community components.',
+        'Here i would try to learn how to create animated scrollable masked TabBar with react-native-tab-view and react-native-reanimated .',
+      screen: 'AnimatedTabBar',
+    },
+
+    {
+      id: '5',
+      title: 'FlatList',
+      content:
+        'FlatList .',
       screen: 'FlatList',
+    },
+
+    {
+      id: '6',
+      title: 'Animated Card',
+      content:
+        'Animated Card',
+      screen: 'AnimatedCard',
     },
 
    
@@ -52,19 +68,32 @@ const Main = () => {
     navigation.navigate(screen);
   };
 
-  const renderItem = ({item}) => (
+  const renderItem = ({item}) => {
+    
+    return (
+    
+
+
     <View style={[styles.card, {backgroundColor: colorScheme.background}]}>
+
       <Text style={[styles.title, {color: colorScheme.text}]}>
         {item.title}
       </Text>
+
       <Text style={[styles.content, {color: colorScheme.text}]}>
         {item.content}
       </Text>
+
+
       <View style={styles.buttonPosition}>
         <Button title="Go" onPress={() => handleOnPress(item.screen)} />
       </View>
+
+
     </View>
   );
+
+}
 
   return (
     <SafeAreaView
