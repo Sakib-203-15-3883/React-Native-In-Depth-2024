@@ -9,6 +9,8 @@ import VectorIcons from '../src/VectorIcons/VectorIcons';
 import LearnTheme from '../src/LearnTheme/LearnTheme';
 import AnimatedTabBar from '../src/AnimatedTapBar/AnimatedTabBar';
 import AnimatedCard from '../src/Animation/AnimatedCard';
+import Bottom from '../src/BottomSheet/BottomSheet';
+import HorizontalButtonList from '../src/Animation/HorizontalButtonList';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +29,8 @@ const NativeStack = () => {
       <Stack.Screen name="AnimatedTabBar" component={AnimatedTabBar} />
       <Stack.Screen name="FlatList" component={FlatList} />
       <Stack.Screen name="AnimatedCard" component={AnimatedCard} />
+      <Stack.Screen name="BottomSheet" component={Bottom} />
+      <Stack.Screen name="HorizontalButtonList" component={HorizontalButtonList} />
     </Stack.Navigator>
   );
 };

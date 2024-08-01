@@ -1,3 +1,4 @@
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import React from 'react';
 import NativeStack from './MainStackNavigators/NativeStack';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
@@ -7,15 +8,17 @@ import {ThemeProvider} from './Context/ThemeContext';
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <PaperProvider>
-        <SafeAreaProvider>
-          <NavigationContainer>
-            <NativeStack />
-          </NavigationContainer>
-        </SafeAreaProvider>
-      </PaperProvider>
-    </ThemeProvider>
+    <GestureHandlerRootView>
+      <ThemeProvider>
+        <PaperProvider>
+          <SafeAreaProvider>
+            <NavigationContainer>
+              <NativeStack />
+            </NavigationContainer>
+          </SafeAreaProvider>
+        </PaperProvider>
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 };
 

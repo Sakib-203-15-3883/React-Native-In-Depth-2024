@@ -18,11 +18,7 @@ const colorSchemes = {
   },
 };
 
-
-
 export const ThemeProvider = ({ children }) => {
-
-
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -31,8 +27,7 @@ export const ThemeProvider = ({ children }) => {
     });
   }, []);
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+  const toggleTheme = (newTheme) => {
     setTheme(newTheme);
     AsyncStorage.setItem('theme', newTheme);
   };

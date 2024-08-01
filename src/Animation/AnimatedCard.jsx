@@ -7,6 +7,7 @@ import {
   Easing,
   TouchableOpacity,
 } from 'react-native';
+
 import {ThemeContext} from '../../Context/ThemeContext';
 const AnimatedCard = () => {
   const {colorScheme} = useContext(ThemeContext);

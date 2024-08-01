@@ -13,6 +13,12 @@ const Main = () => {
 
   const data = [
     {
+      id: '7',
+      title: 'To Change Theme press Go ',
+      content:"here we change the theme for whole app and learn and implement gorhom bottom sheet  ",
+      screen: 'BottomSheet',
+    },
+    {
       id: '1',
       title: 'Learn Components in React Native',
       content:
@@ -60,6 +66,15 @@ const Main = () => {
         'Animated Card',
       screen: 'AnimatedCard',
     },
+    {
+      id: '8',
+      title: 'Horizontal Button List',
+      content:
+        'here i try to place 2 buttons horizontally as smooth and clean and change images based on button click .  ',
+      screen: 'HorizontalButtonList',
+    },
+
+    
 
    
   ];
@@ -98,7 +113,7 @@ const Main = () => {
   return (
     <SafeAreaView
       style={[styles.container, {backgroundColor: colorScheme.background}]}>
-      <View
+      {/* <View
         style={{
           marginVertical:"5%",
           justifyContent: 'center',
@@ -111,7 +126,7 @@ const Main = () => {
           onPress={toggleTheme}
           color={colorScheme.buttonBackground}
         />
-      </View>
+      </View> */}
 
       <FlatList
         data={data}
@@ -147,6 +162,8 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
     marginTop: '5%',
+    borderWidth:2,
+    borderColor:"green"
   },
   title: {
     fontSize: 18,
