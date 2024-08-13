@@ -19,6 +19,7 @@ const HorizontalButtons = () => {
         {activeButton === 'light' && <Image source={LightImage} style={styles.image} />}
         {activeButton === 'dark' && <Image source={DarkImage} style={styles.image} />}
       </View>
+      
 
       <View style={styles.buttons}>
         <TouchableOpacity

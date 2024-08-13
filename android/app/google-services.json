@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519851825568",
+    "project_id": "learnreactnative2024",
+    "storage_bucket": "learnreactnative2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519851825568:android:2bb95adf09c63f9ddb2cc5",
+        "android_client_info": {
+          "package_name": "com.learnreacrnative"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0LZpp49E9EIU_ZzlcNVTTFazwKriIytQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
