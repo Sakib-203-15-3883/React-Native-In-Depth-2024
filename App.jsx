@@ -7,48 +7,45 @@ import {PaperProvider} from 'react-native-paper';
 import {ThemeProvider} from './Context/ThemeContext';
 import messaging from '@react-native-firebase/messaging';
 
-import {Platform, PermissionsAndroid} from 'react-native';
+import {Platform, PermissionsAndroid, Alert} from 'react-native';
 
 const App = () => {
-  const checkApplicationPermission = async () => {
-    if (Platform.OS === 'android') {
-      try {
-        await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS,
-        );
-      } catch (error) {}
-    }
-  };
+  // const checkApplicationPermission = async () => {
+  //   if (Platform.OS === 'android') {
+  //     try {
+  //       await PermissionsAndroid.request(
+  //         PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS,
+  //       );
+  //     } catch (error) {}
+  //   }
+  // };
 
+  // const requestUserPermission = async () => {
+  //   const authStatus = await messaging().requestPermission();
+  //   console.log(`authorization status`, authStatus);
+  //   return (
+  //     authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+  //     authStatus === messaging.AuthorizationStatus.PROVISIONAL
+  //   );
+  // };
 
-  const requestUserPermission = async ()=>{
+  useEffect(() => {
+    // checkApplicationPermission();
 
-    const authStatus = await messaging().requestPermission();
-    console.log(`authorization status`, authStatus);
-    return (
-      authStatus === messaging.AuthorizationStatus.AUTHORIZED || 
-      authStatus === messaging.AuthorizationStatus.PROVISIONAL
-    );
+    // if (requestUserPermission()) {
+    //   messaging()
+    //     .getToken()
+    //     .then(fcmToken => {
+    //       console.log(`FCM Token `, fcmToken);
+    //     });
+    // } else console.log(`not authorization status`, authStatus);
 
-
-
-  };
-
-  useEffect(()=>{
-
-    checkApplicationPermission();
-
-    if(requestUserPermission()){
-
-      messaging()
+    messaging()
       .getToken()
       .then(fcmToken => {
-        console.log( `FCM Token `, fcmToken)
+        console.log(`FCM Token `, fcmToken);
       });
-    } else console.log(`not authorization status`, authStatus);
-
-
-  },[])
+  }, []);
 
   return (
     <GestureHandlerRootView>
