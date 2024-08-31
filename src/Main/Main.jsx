@@ -73,6 +73,13 @@ const Main = () => {
         'here i try to place 2 buttons horizontally as smooth and clean and change images based on button click .  ',
       screen: 'HorizontalButtonList',
     },
+    {
+      id: '9',
+      title: 'Animated Cards Scrolling',
+      content:
+        'Animated Cards Scrolling .  ',
+      screen: 'AnimatedCardsScrolling',
+    },
 
     
 

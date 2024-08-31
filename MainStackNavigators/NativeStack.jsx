@@ -11,6 +11,7 @@ import AnimatedTabBar from '../src/AnimatedTapBar/AnimatedTabBar';
 import AnimatedCard from '../src/Animation/AnimatedCard';
 import Bottom from '../src/BottomSheet/BottomSheet';
 import HorizontalButtonList from '../src/Animation/HorizontalButtonList';
+import AnimatedCardsScrolling from '../src/Animation/AnimatedCardsScrolling';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +32,7 @@ const NativeStack = () => {
       <Stack.Screen name="AnimatedCard" component={AnimatedCard} />
       <Stack.Screen name="BottomSheet" component={Bottom} />
       <Stack.Screen name="HorizontalButtonList" component={HorizontalButtonList} />
+      <Stack.Screen name="AnimatedCardsScrolling" component={AnimatedCardsScrolling} />
     </Stack.Navigator>
   );
 };
