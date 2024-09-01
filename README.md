@@ -75,7 +75,8 @@
 5. Animated vertical scrolling with flatlist and animated api
 6. Animated button
 7. Bottom sheet with gorhom/bottom-sheet
-8. shared element transition between screens without using any external package 
+8. shared element transition between screens without using any external package
+9. Firebase push notification  for all mode 
    
 
    
