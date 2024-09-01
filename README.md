@@ -69,8 +69,13 @@
         user preferences across components.
 
    iv. AsyncStorage: AsyncStorage is a simple, unencrypted, asynchronous, persistent, key-value storage system that 
-       is global to the app. It is commonly used in React Native apps for storing small amounts of data locally. 
-
+       is global to the app. It is commonly used in React Native apps for storing small amounts of data locally.\
+   
+4. Horizontal buttons with attractive ui    
+5. Animated vertical scrolling with flatlist and animated api
+6. Animated button
+7. Bottom sheet with gorhom/bottom-sheet
+8. shared element transition between screens without using any external package 
    
 
    
