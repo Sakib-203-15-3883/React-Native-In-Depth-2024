@@ -12,6 +12,8 @@ import AnimatedCard from '../src/Animation/AnimatedCard';
 import Bottom from '../src/BottomSheet/BottomSheet';
 import HorizontalButtonList from '../src/Animation/HorizontalButtonList';
 import AnimatedCardsScrolling from '../src/Animation/AnimatedCardsScrolling';
+import page1 from '../src/Animation/ShareElementTransion/page1';
+import page2 from '../src/Animation/ShareElementTransion/page2';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +35,8 @@ const NativeStack = () => {
       <Stack.Screen name="BottomSheet" component={Bottom} />
       <Stack.Screen name="HorizontalButtonList" component={HorizontalButtonList} />
       <Stack.Screen name="AnimatedCardsScrolling" component={AnimatedCardsScrolling} />
+      <Stack.Screen name="page1" component={page1} />
+      <Stack.Screen name="page2" component={page2} />
     </Stack.Navigator>
   );
 };

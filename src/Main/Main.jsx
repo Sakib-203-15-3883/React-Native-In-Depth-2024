@@ -80,6 +80,14 @@ const Main = () => {
         'Animated Cards Scrolling .  ',
       screen: 'AnimatedCardsScrolling',
     },
+    {
+      id: '10',
+      title: 'Share Element Transion [ screen1 ]',
+      content:
+        'Share Element Transion  ',
+      screen: 'page1',
+    },
+    
 
     
 
