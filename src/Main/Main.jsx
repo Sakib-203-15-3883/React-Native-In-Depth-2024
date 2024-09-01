@@ -82,10 +82,18 @@ const Main = () => {
     },
     {
       id: '10',
-      title: 'Share Element Transion [ screen1 ]',
+      title: 'Shared Element Transition for cards that contain image  ',
       content:
-        'Share Element Transion  ',
+        'Share Element Transition   ',
       screen: 'page1',
+    },
+
+    {
+      id: '11',
+      title: 'Shared Element Transition for cards that have no image in card ',
+      content:
+        'Share Element Transition  ',
+      screen: 'Screen1',
     },
     
 

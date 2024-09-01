@@ -5,8 +5,13 @@ const { width } = Dimensions.get('window');
 
 const Page2 = ({ route }) => {
   const { item, imageLayout } = route.params;
-  const animatedImagePosition = useRef(new Animated.ValueXY({ x: imageLayout.x, y: imageLayout.y })).current;
-  const animatedImageSize = useRef(new Animated.ValueXY({ x: imageLayout.width, y: imageLayout.height })).current;
+  console.log(imageLayout); // Check if imageLayout is defined
+
+  
+  const { x = 0, y = 0, width = 0, height = 0 } = imageLayout;
+
+  const animatedImagePosition = useRef(new Animated.ValueXY({ x, y })).current;
+  const animatedImageSize = useRef(new Animated.ValueXY({ x: width, y: height })).current;
   const titleOpacity = useRef(new Animated.Value(0)).current;
   const descriptionOpacity = useRef(new Animated.Value(0)).current;
   const titleTranslateY = useRef(new Animated.Value(20)).current;
