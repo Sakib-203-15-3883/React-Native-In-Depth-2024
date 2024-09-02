@@ -76,7 +76,8 @@
 6. Animated button
 7. Bottom sheet with gorhom/bottom-sheet
 8. shared element transition between screens without using any external package
-9. Firebase push notification  for all mode 
+9. Firebase push notification  for all mode
+10. Firebase authentication with mobile number 
    
 
    
