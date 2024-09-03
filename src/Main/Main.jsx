@@ -95,6 +95,13 @@ const Main = () => {
         'Share Element Transition  ',
       screen: 'Screen1',
     },
+    {
+      id: '12',
+      title: 'Firebase Authentication with phone number  ',
+      content:
+        'Firebase Authentication with phone number',
+      screen: 'MainScreenForFirebaseAuth',
+    },
     
 
     

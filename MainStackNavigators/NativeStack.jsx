@@ -17,6 +17,15 @@ import page2 from '../src/Animation/ShareElementTransion/page2';
 import Screen1 from '../src/Animation/SharedElementTransitionCards/Screen1';
 import Screen2 from '../src/Animation/SharedElementTransitionCards/Screen2';
 
+import MainScreenForFirebaseAuth from "../src/LearnFirebaseAuthentication/Index";
+import Screen1ForFirebaseSignUp from '../src/LearnFirebaseAuthentication/Screen1';
+import Screen2ForFirebaseLogin from '../src/LearnFirebaseAuthentication/Screen2';
+
+
+
+import VerifyCodeScreen from "../src/LearnFirebaseAuthentication/VerifyCodeScreen"
+import AuthenticatedScreen from "../src/LearnFirebaseAuthentication/AuthenticatedScreen"
+
 const Stack = createNativeStackNavigator();
 
 const NativeStack = () => {
@@ -41,6 +50,13 @@ const NativeStack = () => {
       <Stack.Screen name="page2" component={page2} />
       <Stack.Screen name="Screen1" component={Screen1} />
       <Stack.Screen name="Screen2" component={Screen2} />
+      <Stack.Screen name="MainScreenForFirebaseAuth" component={MainScreenForFirebaseAuth} />
+      <Stack.Screen name="Screen1ForFirebaseSignUp" component={Screen1ForFirebaseSignUp} />
+      <Stack.Screen name="Screen2ForFirebaseLogin" component={Screen2ForFirebaseLogin} />
+
+
+      <Stack.Screen name="VerifyCodeScreen" component={VerifyCodeScreen} />
+      <Stack.Screen name="AuthenticatedScreen" component={AuthenticatedScreen} />
 
 
     </Stack.Navigator>
