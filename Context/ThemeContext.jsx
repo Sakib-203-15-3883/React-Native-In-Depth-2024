@@ -9,12 +9,14 @@ const colorSchemes = {
     text: '#000000',
     buttonBackground: '#0080ff',
     buttonText: '#ffffff',
+    BottomBackground:"whitesmoke"
   },
   dark: {
     background: '#000000',
     text: '#ffffff',
     buttonBackground: '#0080ff',
     buttonText: '#ffffff',
+    BottomBackground:"#312E2E"
   },
 };
 
