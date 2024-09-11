@@ -1,15 +1,23 @@
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import NativeStack from './MainStackNavigators/NativeStack';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {NavigationContainer} from '@react-navigation/native';
 import {PaperProvider} from 'react-native-paper';
 import {ThemeProvider} from './Context/ThemeContext';
 import messaging from '@react-native-firebase/messaging';
-
-import {Platform, PermissionsAndroid, Alert} from 'react-native';
+import CustomSplashScreen from './src/SplashScreen/SplashScreen';
+import {Platform, PermissionsAndroid, Alert, View} from 'react-native';
 
 const App = () => {
+  const [isSplashVisible, setIsSplashVisible] = React.useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSplashVisible(false);
+    }, 500); // Hide splash after 3 seconds
+  }, []);
+ 
   // const checkApplicationPermission = async () => {
   //   if (Platform.OS === 'android') {
   //     try {
@@ -48,12 +56,19 @@ const App = () => {
   }, []);
 
   return (
-    <GestureHandlerRootView>
+    <GestureHandlerRootView style={{flex: 1}}>
       <ThemeProvider>
         <PaperProvider>
           <SafeAreaProvider>
             <NavigationContainer>
-              <NativeStack />
+             
+             
+                
+                
+
+                {isSplashVisible ? <CustomSplashScreen /> : <NativeStack />}
+         
+              
             </NavigationContainer>
           </SafeAreaProvider>
         </PaperProvider>
@@ -63,15 +78,3 @@ const App = () => {
 };
 
 export default App;
-
-// import messaging from '@react-native-firebase/messaging';
-
-// async function requestUserPermission() {
-//   const authStatus = await messaging().requestPermission();
-//   const enabled = authStatus === messaging.AuthorizationStatus.AUTHORIZED || authStatus === messaging.AuthorizationStatus.PROVISIONAL;
-
-//   if (enabled) {
-//      console.log('Authorization status:', authStatus);
-//      }
-
-//     }
