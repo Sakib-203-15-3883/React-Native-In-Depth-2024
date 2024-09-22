@@ -26,6 +26,10 @@ import Screen2ForFirebaseLogin from '../src/LearnFirebaseAuthentication/Screen2'
 import VerifyCodeScreen from "../src/LearnFirebaseAuthentication/VerifyCodeScreen"
 import AuthenticatedScreen from "../src/LearnFirebaseAuthentication/AuthenticatedScreen"
 
+import FetchData from '../src/Firebase/RealTimeDataBase/FetchData';
+
+import ComplexNavigationStructureOne from "../src/LearnNavigationStructure/ComplexNavigationStructureOne/Main"
+
 const Stack = createNativeStackNavigator();
 
 const NativeStack = () => {
@@ -57,6 +61,10 @@ const NativeStack = () => {
 
       <Stack.Screen name="VerifyCodeScreen" component={VerifyCodeScreen} />
       <Stack.Screen name="AuthenticatedScreen" component={AuthenticatedScreen} />
+
+      <Stack.Screen name="FetchData" component={FetchData} />
+
+      <Stack.Screen name="ComplexNavigationStructureOne" component={ComplexNavigationStructureOne} />
 
 
     </Stack.Navigator>

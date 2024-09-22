@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { StyleSheet, Text, View, Animated, Dimensions } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const { width } = Dimensions.get('window');
 
 const Page2 = ({ route }) => {
   const { item, imageLayout } = route.params;
-  console.log(imageLayout); // Check if imageLayout is defined
 
-  
   const { x = 0, y = 0, width = 0, height = 0 } = imageLayout;
 
   const animatedImagePosition = useRef(new Animated.ValueXY({ x, y })).current;
@@ -35,9 +34,10 @@ const Page2 = ({ route }) => {
         toValue: 300,
         useNativeDriver: false,
       }),
-      // Animate title and description after image transition
+    ]).start(() => {
+      // Sequential animation for text after the image transition
       Animated.sequence([
-        Animated.delay(300), // delay to sync with image animation
+        // Title animation
         Animated.parallel([
           Animated.timing(titleOpacity, {
             toValue: 1,
@@ -49,6 +49,11 @@ const Page2 = ({ route }) => {
             duration: 500,
             useNativeDriver: true,
           }),
+        ]),
+        // Add a slight delay before animating the description
+        Animated.delay(200),
+        // Description animation
+        Animated.parallel([
           Animated.timing(descriptionOpacity, {
             toValue: 1,
             duration: 500,
@@ -60,12 +65,13 @@ const Page2 = ({ route }) => {
             useNativeDriver: true,
           }),
         ]),
-      ]),
-    ]).start();
+      ]).start();
+    });
   }, []);
 
   return (
     <View style={styles.container}>
+    
       <Animated.Image 
         source={{ uri: item.imageUrl }} 
         style={[
@@ -79,6 +85,8 @@ const Page2 = ({ route }) => {
           }
         ]}
       />
+
+
       <View style={styles.content}>
         <Animated.Text 
           style={[
@@ -103,7 +111,10 @@ const Page2 = ({ route }) => {
           {item.description}
         </Animated.Text>
       </View>
-    </View>
+      </View>
+
+
+   
   );
 };
 
@@ -112,24 +123,41 @@ export default Page2;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
-    padding: 10,
+    
+    
+    
+    backgroundColor:"black"
+  
   },
   image: {
-    borderRadius: 10,
+    borderRadius: 15,
+    shadowColor: '#000',
+    shadowOpacity: 0.6,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 10,
   },
   content: {
-    marginTop: 320,
-    padding: 15,
+    marginTop: 350,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
   title: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: 'bold',
     marginVertical: 10,
-    color: 'white',
+    color: '#fff',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 10,
+    letterSpacing:1.6
   },
   description: {
-    fontSize: 18,
-    color: 'white',
+    fontSize: 14,
+    color: '#ddd',
+    lineHeight: 24,
+    textShadowColor: 'rgba(0, 0, 0, 0.5)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 6,
+    letterSpacing:1.4
   },
 });

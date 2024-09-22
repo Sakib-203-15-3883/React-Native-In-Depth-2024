@@ -96,12 +96,27 @@ const Main = () => {
       screen: 'Screen1',
     },
     {
+      id: '14',
+      title: 'Complex Navigation Structure One ',
+      content:
+        'Complex Navigation Structure One',
+      screen: 'ComplexNavigationStructureOne',
+    },
+    {
       id: '12',
       title: 'Firebase Authentication with phone number  ',
       content:
         'Firebase Authentication with phone number',
       screen: 'MainScreenForFirebaseAuth',
     },
+    {
+      id: '13',
+      title: 'Fetch Data from firebase real time database ',
+      content:
+        'Fetch Data from firebase real time database',
+      screen: 'FetchData',
+    },
+    
     
 
     

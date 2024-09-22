@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import React, {useEffect, useState} from 'react';
 import NativeStack from './MainStackNavigators/NativeStack';
@@ -6,17 +7,13 @@ import {NavigationContainer} from '@react-navigation/native';
 import {PaperProvider} from 'react-native-paper';
 import {ThemeProvider} from './Context/ThemeContext';
 import messaging from '@react-native-firebase/messaging';
-import CustomSplashScreen from './src/SplashScreen/SplashScreen';
+
 import {Platform, PermissionsAndroid, Alert, View} from 'react-native';
 
 const App = () => {
-  const [isSplashVisible, setIsSplashVisible] = React.useState(true);
+  
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsSplashVisible(false);
-    }, 500); // Hide splash after 3 seconds
-  }, []);
+  
  
   // const checkApplicationPermission = async () => {
   //   if (Platform.OS === 'android') {
@@ -66,7 +63,7 @@ const App = () => {
                 
                 
 
-                {isSplashVisible ? <CustomSplashScreen /> : <NativeStack />}
+                 <NativeStack />
          
               
             </NavigationContainer>
