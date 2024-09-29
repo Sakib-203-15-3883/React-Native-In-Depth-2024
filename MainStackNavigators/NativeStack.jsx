@@ -30,6 +30,8 @@ import FetchData from '../src/Firebase/RealTimeDataBase/FetchData';
 
 import ComplexNavigationStructureOne from "../src/LearnNavigationStructure/ComplexNavigationStructureOne/Main"
 
+import CBG from '../src/InterView/CBG';
+
 const Stack = createNativeStackNavigator();
 
 const NativeStack = () => {
@@ -65,6 +67,7 @@ const NativeStack = () => {
       <Stack.Screen name="FetchData" component={FetchData} />
 
       <Stack.Screen name="ComplexNavigationStructureOne" component={ComplexNavigationStructureOne} />
+      <Stack.Screen name="CBG" component={CBG} />
 
 
     </Stack.Navigator>

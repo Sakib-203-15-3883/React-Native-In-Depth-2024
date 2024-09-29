@@ -103,6 +103,13 @@ const Main = () => {
       screen: 'ComplexNavigationStructureOne',
     },
     {
+      id: '15',
+      title: 'InterView from CBG ',
+      content:
+        'InterView from CBG',
+      screen: 'CBG',
+    },
+    {
       id: '12',
       title: 'Firebase Authentication with phone number  ',
       content:
@@ -116,6 +123,8 @@ const Main = () => {
         'Fetch Data from firebase real time database',
       screen: 'FetchData',
     },
+    
+    
     
     
 
