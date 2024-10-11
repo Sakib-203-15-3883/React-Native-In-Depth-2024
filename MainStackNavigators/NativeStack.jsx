@@ -31,6 +31,9 @@ import FetchData from '../src/Firebase/RealTimeDataBase/FetchData';
 import ComplexNavigationStructureOne from "../src/LearnNavigationStructure/ComplexNavigationStructureOne/Main"
 
 import CBG from '../src/InterView/CBG';
+import SearchScreen1 from '../src/SearchScreens/SearchScreen1';
+import Horror from '../src/PracticeStackScreen/StackScreen1';
+import CustomHeader from '../src/components/CustomHeader';
 
 const Stack = createNativeStackNavigator();
 
@@ -68,6 +71,19 @@ const NativeStack = () => {
 
       <Stack.Screen name="ComplexNavigationStructureOne" component={ComplexNavigationStructureOne} />
       <Stack.Screen name="CBG" component={CBG} />
+      <Stack.Screen name="SearchScreen1" component={SearchScreen1} />
+      <Stack.Screen name="Horror" component={Horror}
+      
+      options={({ navigation }) => ({
+        headerShown: true,
+        header: () => (
+          <CustomHeader 
+            title="Horror" 
+            onBackPress={() => navigation.goBack()} // Pass back action
+          />
+        ),
+      })}  />
+
 
 
     </Stack.Navigator>

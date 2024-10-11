@@ -11,7 +11,7 @@ import Login from './DrawerScreen/Login';
 import {createDrawerNavigator, DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/MaterialIcons'; // Vector icons
 import Profile from "../../../images/profile1.png";
-
+import { useNavigation } from '@react-navigation/native';
 const Drawer = createDrawerNavigator();
 
 const CustomDrawerContent = (props) => {
@@ -55,6 +55,7 @@ const CustomDrawerContent = (props) => {
 };
 
 const Main = () => {
+  const navigation = useNavigation();
   return (
     <Drawer.Navigator
       initialRouteName="Home"
@@ -91,7 +92,7 @@ const Main = () => {
           headerRight: () => (
             <View style={{flexDirection: 'row', marginRight: 10}}>
               {/* Search Icon */}
-              <TouchableOpacity onPress={() => { /* Handle search icon press */ }}>
+              <TouchableOpacity onPress={() => { navigation.navigate("SearchScreen1") }}>
                 <Icon name="search" size={24} color="white" style={{marginRight: 15}} />
               </TouchableOpacity>
 
