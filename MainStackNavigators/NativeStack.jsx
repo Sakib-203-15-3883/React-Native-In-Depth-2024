@@ -34,6 +34,7 @@ import CBG from '../src/InterView/CBG';
 import SearchScreen1 from '../src/SearchScreens/SearchScreen1';
 import Horror from '../src/PracticeStackScreen/StackScreen1';
 import CustomHeader from '../src/components/CustomHeader';
+import CloneScreen from '../src/Tabs/CloneAirtelTabsFeature/CloneScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -71,6 +72,7 @@ const NativeStack = () => {
 
       <Stack.Screen name="ComplexNavigationStructureOne" component={ComplexNavigationStructureOne} />
       <Stack.Screen name="CBG" component={CBG} />
+      <Stack.Screen name="Offers" component={CloneScreen}  />
       <Stack.Screen name="SearchScreen1" component={SearchScreen1} />
       <Stack.Screen name="Horror" component={Horror}
       

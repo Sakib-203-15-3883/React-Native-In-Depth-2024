@@ -13,8 +13,8 @@ const Button = ({ title, onPress }) => {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#007bff',
-    width: 150, // Fixed width
-    height: 50, // Fixed height
+    width: 125, // Fixed width
+    height: 40, // Fixed height
    
     borderRadius: 10,
     alignItems: 'center',

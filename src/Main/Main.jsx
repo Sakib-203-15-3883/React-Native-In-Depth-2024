@@ -110,6 +110,13 @@ const Main = () => {
       screen: 'CBG',
     },
     {
+      id: '16',
+      title: 'Clone Screen ',
+      content:
+        'Clone  for airtel nested top tabs  ',
+      screen: 'Offers',
+    },
+    {
       id: '12',
       title: 'Firebase Authentication with phone number  ',
       content:
@@ -204,9 +211,9 @@ const styles = StyleSheet.create({
     // backgroundColor: '#ffffff',
     // backgroundColor:colorScheme.background,
     borderRadius: 10,
-    padding: 20,
+    padding: 10,
     marginVertical: 10,
-    marginHorizontal: 20,
+    marginHorizontal: 10,
     shadowColor: '#000000',
     shadowOffset: {
       width: 0,
@@ -216,17 +223,17 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
     marginTop: '5%',
-    borderWidth:2,
+    // borderWidth:1,
     borderColor:"green"
   },
   title: {
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 'bold',
     marginBottom: 10,
     // color: lightColors.text,
   },
   content: {
-    fontSize: 16,
+    fontSize: 12,
     // color: lightColors.text,
   },
 
