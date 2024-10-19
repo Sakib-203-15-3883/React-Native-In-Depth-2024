@@ -123,6 +123,15 @@ const Main = () => {
         'Onboarding screen',
       screen: 'Onboarding1',
     },
+
+    {
+      id: '18',
+      title: 'Basic reanimated 3',
+      content:
+        'Basic reanimated 3',
+      screen: 'Basic',
+    },
+    
     {
       id: '12',
       title: 'Firebase Authentication with phone number  ',

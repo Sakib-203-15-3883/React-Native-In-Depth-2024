@@ -36,6 +36,7 @@ import Horror from '../src/PracticeStackScreen/StackScreen1';
 import CustomHeader from '../src/components/CustomHeader';
 import CloneScreen from '../src/Tabs/CloneAirtelTabsFeature/CloneScreen';
 import Onboarding1 from '../src/onboarding/Onboarding1/Onboarding1';
+import Basic from '../src/Reanimated3/Basic';
 
 const Stack = createNativeStackNavigator();
 
@@ -88,6 +89,7 @@ const NativeStack = () => {
       })}  />
 
 <Stack.Screen name="Onboarding1" component={Onboarding1} />
+<Stack.Screen name="Basic" component={Basic} />
 
 
 
