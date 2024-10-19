@@ -117,6 +117,13 @@ const Main = () => {
       screen: 'Offers',
     },
     {
+      id: '17',
+      title: 'Onboarding 1',
+      content:
+        'Onboarding screen',
+      screen: 'Onboarding1',
+    },
+    {
       id: '12',
       title: 'Firebase Authentication with phone number  ',
       content:
