@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -37,6 +37,10 @@ import CustomHeader from '../src/components/CustomHeader';
 import CloneScreen from '../src/Tabs/CloneAirtelTabsFeature/CloneScreen';
 import Onboarding1 from '../src/onboarding/Onboarding1/Onboarding1';
 import Basic from '../src/Reanimated3/Basic';
+
+import StyleSheet from '../src/Reanimated3/StyleSheet_Vs_useAnimatedStyle/StyleSheet';
+import UseAnimatedStyle from '../src/Reanimated3/StyleSheet_Vs_useAnimatedStyle/UseAnimatedStyle';
+import CompareScreen from '../src/Reanimated3/StyleSheet_Vs_useAnimatedStyle/CompareScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -90,6 +94,10 @@ const NativeStack = () => {
 
 <Stack.Screen name="Onboarding1" component={Onboarding1} />
 <Stack.Screen name="Basic" component={Basic} />
+<Stack.Screen name="CompareScreen" component={ CompareScreen} />
+<Stack.Screen name="StyleSheet" component={StyleSheet} />
+<Stack.Screen name="UseAnimatedStyle" component={UseAnimatedStyle} />
+
 
 
 
@@ -99,4 +107,4 @@ const NativeStack = () => {
 
 export default NativeStack;
 
-const styles = StyleSheet.create({});
+

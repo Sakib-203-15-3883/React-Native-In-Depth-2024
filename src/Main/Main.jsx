@@ -131,6 +131,13 @@ const Main = () => {
         'Basic reanimated 3',
       screen: 'Basic',
     },
+    {
+      id: '19',
+      title: 'StyleSheet vs useAnimationStyle ',
+      content:
+        'StyleSheet[change style with state change ] vs useAnimationStyle from reanimated3 [ change style dynamically on UI thread ]',
+      screen: 'CompareScreen',
+    },
     
     {
       id: '12',

@@ -9,7 +9,7 @@ const Basic = () => {
   const width = useSharedValue(140);
 
   const handlePress = () => {
-    width.value = withSpring(isExpanded ? width.value + 10 : width.value - 10);
+    width.value = withSpring(isExpanded ? width.value + 20 : width.value - 20);
     setIsExpanded(!isExpanded);
     setShowList(!showList); 
   };
