@@ -18,54 +18,39 @@ const Main = () => {
       content:"here we change the theme for whole app and learn and implement gorhom bottom sheet  ",
       screen: 'BottomSheet',
     },
+
+    // {
+    //   id: '1',
+    //   title: 'Learn Components in React Native',
+    //   content:
+    //     'Here we would try to learn all the concepts related to components like react components, core components, native components, community components.',
+    //   screen: 'Components',
+    // },
+
     {
-      id: '1',
-      title: 'Learn Components in React Native',
+      id: '14',
+      title: 'Complex Navigation Structure One ',
       content:
-        'Here we would try to learn all the concepts related to components like react components, core components, native components, community components.',
-      screen: 'Components',
+        'Complex Navigation Structure One',
+      screen: 'ComplexNavigationStructureOne',
     },
 
     {
-      id: '2',
-      title: 'Learn react-native-vector-icons',
+      id: '16',
+      title: ' Airtel Clone Screen ',
       content:
-        'Here we would try to learn  the concepts related to VectorIcons and use different types of icons in react native project  ',
-      screen: 'VectorIcons',
+        'Clone  for airtel nested top tabs  ',
+      screen: 'Offers',
     },
 
     {
-      id: '3',
-      title: 'Learn how to apply theme in React Native',
+      id: '12',
+      title: 'Firebase Authentication with phone number  ',
       content:
-        'we implement theme [ light/dark ] in react native app with AsyncStorage and context api for whole app.  ',
-      screen: 'LearnTheme',
+        'Firebase Authentication with phone number',
+      screen: 'MainScreenForFirebaseAuth',
     },
 
-
-    {
-      id: '4',
-      title: 'Learn how to create animated scrollable masked TabBar',
-      content:
-        'Here i would try to learn how to create animated scrollable masked TabBar with react-native-tab-view and react-native-reanimated .',
-      screen: 'AnimatedTabBar',
-    },
-
-    {
-      id: '5',
-      title: 'FlatList',
-      content:
-        'FlatList .',
-      screen: 'FlatList',
-    },
-
-    {
-      id: '6',
-      title: 'Animated Card',
-      content:
-        'Animated Card',
-      screen: 'AnimatedCard',
-    },
     {
       id: '8',
       title: 'Horizontal Button List',
@@ -73,6 +58,44 @@ const Main = () => {
         'here i try to place 2 buttons horizontally as smooth and clean and change images based on button click .  ',
       screen: 'HorizontalButtonList',
     },
+
+   
+
+   
+
+    // {
+    //   id: '3',
+    //   title: 'Learn how to apply theme in React Native',
+    //   content:
+    //     'we implement theme [ light/dark ] in react native app with AsyncStorage and context api for whole app.  ',
+    //   screen: 'LearnTheme',
+    // },
+
+
+    // {
+    //   id: '4',
+    //   title: 'Learn how to create animated scrollable masked TabBar',
+    //   content:
+    //     'Here i would try to learn how to create animated scrollable masked TabBar with react-native-tab-view and react-native-reanimated .',
+    //   screen: 'AnimatedTabBar',
+    // },
+
+    // {
+    //   id: '5',
+    //   title: 'FlatList',
+    //   content:
+    //     'FlatList .',
+    //   screen: 'FlatList',
+    // },
+
+    // {
+    //   id: '6',
+    //   title: 'Animated Card',
+    //   content:
+    //     'Animated Card',
+    //   screen: 'AnimatedCard',
+    // },
+   
     {
       id: '9',
       title: 'Animated Cards Scrolling',
@@ -95,27 +118,23 @@ const Main = () => {
         'Share Element Transition  ',
       screen: 'Screen1',
     },
+
     {
-      id: '14',
-      title: 'Complex Navigation Structure One ',
+      id: '20',
+      title: 'Animation  ',
       content:
-        'Complex Navigation Structure One',
-      screen: 'ComplexNavigationStructureOne',
+        'Animation while render card  data   ',
+      screen: 'FadeAnimation',
     },
-    {
-      id: '15',
-      title: 'InterView from CBG ',
-      content:
-        'InterView from CBG',
-      screen: 'CBG',
-    },
-    {
-      id: '16',
-      title: 'Clone Screen ',
-      content:
-        'Clone  for airtel nested top tabs  ',
-      screen: 'Offers',
-    },
+    
+    // {
+    //   id: '15',
+    //   title: 'InterView from CBG ',
+    //   content:
+    //     'InterView from CBG',
+    //   screen: 'CBG',
+    // },
+    
     {
       id: '17',
       title: 'Onboarding 1',
@@ -139,23 +158,23 @@ const Main = () => {
       screen: 'CompareScreen',
     },
     
+   
+    // {
+    //   id: '13',
+    //   title: 'Fetch Data from firebase real time database ',
+    //   content:
+    //     'Fetch Data from firebase real time database',
+    //   screen: 'FetchData',
+    // },
+    
+    
     {
-      id: '12',
-      title: 'Firebase Authentication with phone number  ',
+      id: '2',
+      title: 'Learn react-native-vector-icons',
       content:
-        'Firebase Authentication with phone number',
-      screen: 'MainScreenForFirebaseAuth',
+        'Here we would try to learn  the concepts related to VectorIcons and use different types of icons in react native project  ',
+      screen: 'VectorIcons',
     },
-    {
-      id: '13',
-      title: 'Fetch Data from firebase real time database ',
-      content:
-        'Fetch Data from firebase real time database',
-      screen: 'FetchData',
-    },
-    
-    
-    
     
 
     

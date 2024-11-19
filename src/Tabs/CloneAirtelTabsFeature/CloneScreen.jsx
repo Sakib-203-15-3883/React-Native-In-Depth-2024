@@ -108,6 +108,8 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
 const CloneScreen = () => {
   return (
     <View style={styles.container}>
+
+      
       <Tab.Navigator
         tabBar={(props) => <CustomTabBar {...props} />}
         screenOptions={{

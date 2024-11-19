@@ -41,7 +41,7 @@ import Basic from '../src/Reanimated3/Basic';
 import StyleSheet from '../src/Reanimated3/StyleSheet_Vs_useAnimatedStyle/StyleSheet';
 import UseAnimatedStyle from '../src/Reanimated3/StyleSheet_Vs_useAnimatedStyle/UseAnimatedStyle';
 import CompareScreen from '../src/Reanimated3/StyleSheet_Vs_useAnimatedStyle/CompareScreen';
-
+import FadeAnimation from '../src/Reanimated3/FadeAnimation/FadeAnimation';
 const Stack = createNativeStackNavigator();
 
 const NativeStack = () => {
@@ -53,6 +53,9 @@ const NativeStack = () => {
         headerShown: false,
       }}>
       <Stack.Screen name="Home" component={Main} />
+      <Stack.Screen name="FadeAnimation" component={FadeAnimation} />
+
+
       <Stack.Screen name="Components" component={Components} />
       <Stack.Screen name="VectorIcons" component={VectorIcons} />
       <Stack.Screen name="LearnTheme" component={ LearnTheme} />
